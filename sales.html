@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="sales.css">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./image/catfoot.jpg" alt="Logo" width="70" height="70" />
+      </a>
+      <!-- Toggler for mobile view -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+        aria-controls="navbarContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Adoption</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myorders.html">My Orders</a>
+          </li>
+        </ul>
+        <!-- Login Button with Icon -->
+        <a href="#" class="btn btn-primary d-flex align-items-center">
+          <i class="bi bi-box-arrow-in-right me-2"></i> Login
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header-container">
+    <h1>Your Heading Text</h1>
+    <button class="cart-button">
+      <span class="cart-icon">🛒</span> Add to Cart
+    </button>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="./image/1.png" alt="Pet Food 1" class="food-image">
+      <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+      <p class="food-amount">$20.00</p>
+      <div class="order-controls">
+        <input type="number" class="quantity" value="1" min="1">
+        <p class="total-amount">Total: $20.00</p>
+      </div>
+      <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="card">
+        <img src="./image/2.jpg" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="card">
+        <img src="./image/3.png" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+
+      <div class="card">
+        <img src="./image/1.png" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+
+      <div class="card">
+        <img src="./image/2.jpg" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+
+      <div class="card">
+        <img src="./image/3.png" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+
+      <div class="card">
+        <img src="./image/1.png" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+      <div class="card">
+        <img src="./image/2.jpg" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+
+
+      <div class="card">
+        <img src="./image/3.png" alt="Pet Food 1" class="food-image">
+        <p class="food-description">Premium Dog Food - Chicken Flavor</p>
+        <p class="food-amount">$20.00</p>
+        <div class="order-controls">
+          <input type="number" class="quantity" value="1" min="1">
+          <p class="total-amount">Total: $20.00</p>
+        </div>
+        <button class="add-to-cart" data-bs-toggle="modal" data-bs-target="#customerDetailsModal">
+          Add to Cart
+        </button>
+      </div>
+
+      
+    <!-- Repeat for other cards -->
+  </div>
+
+  <!-- Customer Details Modal -->
+  <div class="modal fade" id="customerDetailsModal" tabindex="-1" aria-labelledby="customerDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="customerDetailsModalLabel">Enter Customer Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="customerForm">
+            <div class="mb-3">
+              <label for="customerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="customerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="customerEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerPhone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="customerPhone" required>
+            </div>
+            <div class="mb-3">
+              <label for="customerAddress" class="form-label">Address</label>
+              <textarea class="form-control" id="customerAddress" rows="3" required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="confirmOrder">
+            Confirm Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script>
+    // Dynamic Total Calculation
+    document.querySelectorAll('.quantity').forEach(input => {
+      input.addEventListener('input', (e) => {
+        const card = e.target.closest('.card');
+        const price = parseFloat(card.querySelector('.food-amount').textContent.replace('$', ''));
+        const quantity = parseInt(e.target.value);
+        const totalAmount = card.querySelector('.total-amount');
+        totalAmount.textContent = `Total: $${(price * quantity).toFixed(2)}`;
+      });
+    });
+
+    // Confirm Order Button
+    document.getElementById('confirmOrder').addEventListener('click', () => {
+      const name = document.getElementById('customerName').value;
+      const email = document.getElementById('customerEmail').value;
+      const phone = document.getElementById('customerPhone').value;
+      const address = document.getElementById('customerAddress').value;
+
+      if (name && email && phone && address) {
+        alert(`Order confirmed!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}`);
+        // Close the modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('customerDetailsModal'));
+        modal.hide();
+      } else {
+        alert('Please fill out all fields.');
+      }
+    });
+
+
+    document.getElementById('confirmOrder').addEventListener('click', () => {
+  const name = document.getElementById('customerName').value;
+  const email = document.getElementById('customerEmail').value;
+  const phone = document.getElementById('customerPhone').value;
+  const address = document.getElementById('customerAddress').value;
+
+  if (name && email && phone && address) {
+    // Get the ordered item details
+    const card = document.querySelector('.card'); // Adjust this to get the correct card
+    const foodDescription = card.querySelector('.food-description').textContent;
+    const quantity = card.querySelector('.quantity').value;
+    const totalAmount = card.querySelector('.total-amount').textContent;
+
+    // Create an order object
+    const order = {
+      customer: { name, email, phone, address },
+      items: [{ description: foodDescription, quantity, totalAmount }],
+      date: new Date().toLocaleString(),
+    };
+
+    // Save the order to localStorage
+    let orders = JSON.parse(localStorage.getItem('orders')) || [];
+    orders.push(order);
+    localStorage.setItem('orders', JSON.stringify(orders));
+
+    alert(`Order confirmed!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}`);
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('customerDetailsModal'));
+    modal.hide();
+  } else {
+    alert('Please fill out all fields.');
+  }
+});
+
+
+document.getElementById('confirmOrder').addEventListener('click', () => {
+    const name = document.getElementById('customerName').value;
+    const email = document.getElementById('customerEmail').value;
+    const phone = document.getElementById('customerPhone').value;
+    const address = document.getElementById('customerAddress').value;
+  
+    if (name && email && phone && address) {
+      // Find the card associated with the clicked "Add to Cart" button
+      const card = document.querySelector('.card'); // This is the issue: it only selects the first card
+  
+      // Corrected: Use event delegation or a unique identifier to find the correct card
+      const foodDescription = card.querySelector('.food-description').textContent;
+      const quantity = card.querySelector('.quantity').value;
+      const totalAmount = card.querySelector('.total-amount').textContent;
+  
+      // Create an order object
+      const order = {
+        customer: { name, email, phone, address },
+        items: [{ description: foodDescription, quantity, totalAmount }],
+        date: new Date().toLocaleString(),
+      };
+  
+      // Save the order to localStorage
+      let orders = JSON.parse(localStorage.getItem('orders')) || [];
+      orders.push(order);
+      localStorage.setItem('orders', JSON.stringify(orders));
+  
+      alert(`Order confirmed!\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAddress: ${address}`);
+      // Close the modal
+      const modal = bootstrap.Modal.getInstance(document.getElementById('customerDetailsModal'));
+      modal.hide();
+    } else {
+      alert('Please fill out all fields.');
+    }
+  });
+  </script>
+</body>
+</html>

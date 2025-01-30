@@ -1,0 +1,180 @@
+/* Navbar Styles */
+.navbar-brand img {
+    border-radius: 50%; /* Optional: Rounded logo */
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #007bff; /* Highlight color */
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primary i {
+    font-size: 1.2rem;
+  }
+  
+  /* Header Styles */
+  .header-container {
+    display: flex;
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center; /* Center text */
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .cart-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #4a5158;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Add space between h1 and button on small screens */
+  }
+  
+  .cart-button:hover {
+    background-color: #ea0a67;
+  }
+  
+  .cart-icon {
+    margin-right: 8px;
+  }
+  
+  /* Card Grid Styles */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Individual Card Styles */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width within the grid cell */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .food-description {
+    font-size: 14px;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .food-amount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+  }
+  
+  .order-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .total-amount {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    width: 100%;
+    padding: 8px;
+    background-color: #226980;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #3b6c59;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 992px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column; /* Stack h1 and button vertically */
+    }
+  
+    .card-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-container {
+      grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+  
+    .navbar-brand img {
+      width: 50px; /* Smaller logo for mobile */
+      height: 50px;
+    }
+  
+    .btn-primary {
+      padding: 6px 12px; /* Smaller button for mobile */
+      font-size: 0.9rem;
+    }
+  }
